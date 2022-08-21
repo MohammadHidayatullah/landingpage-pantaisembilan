@@ -1,0 +1,225 @@
+/** @format */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 8vw;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+header nav .nav-brand a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+header nav ul {
+}
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 2vw;
+}
+/* .menu{
+  display: flex;
+  justify-content: end;
+} */
+header .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  /* background-image: url("/assets/images/hero.png");
+  filter: brightness(0.6); */
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+header .hero .hero-img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.5);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+header .hero text {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.btn-kontak {
+  background-color: transparent;
+  border: 2px solid rgba(54, 21, 0, 1);
+  color: rgba(54, 21, 0, 1);
+  padding: 1vh;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-kontak:hover {
+  background-color: rgba(54, 21, 0, 1);
+  color: #fff;
+}
+
+/* section-facility style */
+#section-facility {
+  width: 80%;
+  margin: 20vh auto;
+  /* margin-top: 20vh; */
+  text-align: center;
+}
+
+#section-facility .facility-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#section-facility .card {
+  margin: 2vh 0;
+  flex-basis: 26%;
+  box-shadow: 0px 0px 6px 0px rgba(54, 21, 0, 1);
+  border-radius: 10px;
+  padding: 4vh 2vw;
+}
+
+#section-facility .card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  filter: brightness(0.5);
+}
+
+#section-facility .card img:hover {
+  filter: brightness(1);
+}
+
+@media (max-width: 700px) {
+  #section-facility .facility-content {
+    flex-direction: column;
+  }
+}
+
+/* end section-facility style */
+
+/* section-testimony style */
+#section-testimony {
+  width: 80%;
+  margin: 20vh auto;
+}
+
+#section-testimony .testimony-title {
+  text-align: center;
+}
+#section-testimony .testimony-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#section-testimony .testimony-content .card {
+  box-shadow: 0px 0px 6px 0px rgba(54, 21, 0, 1);
+  padding: 4vh 2vw;
+  flex-basis: 26%;
+  border-radius: 10px;
+}
+
+#section-testimony .testimony-content .card .testimony-heading {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+#section-testimony .testimony-content .card .testimony-heading img {
+  width: 8vw;
+  border-radius: 10px;
+  margin-right: 2vw;
+}
+
+#section-testimony .testimony-content .card .testimony-desc {
+  text-align: center;
+}
+
+/* end section-testimony style */
+
+/* section-cta style */
+#section-cta {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20vh;
+}
+
+#section-cta .cta-banner {
+  /* display: flex; */
+  flex-basis: 54%;
+  height: 50vh;
+  /* background-color: #fec260; */
+  border-radius: 10px;
+}
+#section-cta .cta-banner img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover !important;
+  border-radius: 10px;
+  filter: brightness(0.5);
+}
+
+#section-cta .cta-text {
+  flex-basis: 40%;
+}
+
+#section-cta .cta-text .cta-title {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  #section-cta {
+    flex-direction: column;
+  }
+  #section-cta .cta-banner {
+    flex-basis: 100%;
+  }
+  #section-cta .cta-text {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+/* end section-cta style */
+
+/* section-alamat style */
+#section-alamat {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20vh;
+  text-align: center;
+}
+#section-alamat .alamat-content {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 0px rgba(54, 21, 0, 1);
+}
+
+/* end section-alamat style */
+footer {
+  height: 20vh;
+}
