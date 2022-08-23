@@ -59,14 +59,14 @@ header nav ul li a:hover {
 @media (max-width: 768px) {
   header nav .menu {
     position: absolute;
-    background: #f7be68;
-    height: 100vh;
+    background: #361500;
     width: 40vw;
+    height: 100vh;
+    right: -40vw;
     top: 0;
-    right: -200px;
+    z-index: 3;
+    transition: 2s;
     text-align: left;
-    z-index: 2;
-    transition: 1s;
   }
 
   header nav .menu ul {
@@ -77,6 +77,9 @@ header nav ul li a:hover {
   header nav .menu ul li {
     display: block;
     margin-bottom: 4vh;
+  }
+  header nav .menu ul li a {
+    color: #fff;
   }
 
   header nav .toggle {
@@ -104,7 +107,7 @@ header nav ul li a:hover {
   }
 
   header nav .menu .close-toggle span {
-    background-color: black;
+    background-color: #fff;
     width: 26px;
     height: 2px;
     border-radius: 20px;
