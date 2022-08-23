@@ -1,5 +1,3 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pantai Sembilan</title>
+
+    <!-- import font family from google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Seaweed+Script&display=swap"
       rel="stylesheet"
     />
+
+    <!-- import font awesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -20,6 +22,7 @@
       crossorigin="anonymous"
     />
 
+    <!-- import css eksternal -->
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
@@ -28,7 +31,16 @@
         <div class="nav-brand">
           <a href="">Pantai Sembilan </a>
         </div>
-        <div class="menu">
+        <div class="toggle" id="toggle" onclick="showToggle()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu" id="menu">
+          <div class="close-toggle" id="close-toggle" onclick="closetoggle()">
+            <span></span>
+            <span></span>
+          </div>
           <ul>
             <li><a href="#section-facility">Fasilitas</a></li>
             <li><a href="#section-testimony">Testimony</a></li>
@@ -37,25 +49,26 @@
         </div>
       </nav>
       <div class="hero">
-        <img class="hero-img" src="/assets/images/hero.png" alt="" />
-        <div class="hero-text">
-          <h1 class="hero-title">
+        <div class="text">
+          <h1 class="title">
             Explore <br />
             <span>Pantai Sembilan Gili Genting</span>
           </h1>
-          <p class="hero-desc">
+          <p class="desc">
             Ingin liburan di pantai yang indah? <br />
             kunjungi pantai Gili Genting
           </p>
         </div>
-        <button class="btn btn-kontak">Kontak Kami</button>
+        <a href="https://www.instagram.com/pantaisembilan_sumenep/">
+          <button class="btn btn-kontak1">Kontak Kami</button>
+        </a>
       </div>
     </header>
 
     <main>
-      <section id="section-facility">
+      <article id="section-facility">
         <h2>Fasilitas</h2>
-        <div class="facility-content">
+        <div class="content">
           <div class="card">
             <img src="/assets/images/kapal.jpg" alt="" />
             <h5>Kapal Penyeberangan</h5>
@@ -64,7 +77,6 @@
             <img src="/assets/images/photo-area.jpg" alt="" />
             <h5>Area Foto</h5>
           </div>
-
           <div class="card">
             <div class="card-img">
               <img src="/assets/images/villa.jpg" alt="" />
@@ -72,18 +84,18 @@
             </div>
           </div>
         </div>
-      </section>
+      </article>
 
       <article id="section-cta">
-        <div class="cta-banner">
+        <div class="banner">
           <img src="/assets/images/header.jpg" alt="" />
         </div>
-        <div class="cta-text">
-          <h2 class="cta-title">
+        <div class="text">
+          <h2 class="title">
             Rencanakan Liburan kamu <br />
             di Pantai Sembilan Gili Genting
           </h2>
-          <p>
+          <p class="desc">
             Rasakan liburan yang seru, nyaman dan nuansa alam yang masih sangat
             pekat. <br />
             Fasilitas lengkap dan bermutu untuk liburanmu, kunjungi pantai Gili
@@ -91,58 +103,66 @@
             <br />
             Hubungi kami dengan menekan tombol dibawah ini
           </p>
-          <button class="btn btn-kontak">Kontak Kami</button>
+          <a href="https://www.instagram.com/pantaisembilan_sumenep/">
+            <button class="btn btn-kontak">Kontak Kami</button>
+          </a>
         </div>
       </article>
 
-      <section id="section-testimony">
-        <h2 class="testimony-title">Testimoni</h2>
-        <div class="testimony-content">
+      <article id="section-testimony">
+        <h2 class="title">Testimoni</h2>
+        <div class="content">
           <div class="card">
-            <div class="testimony-heading">
-              <img src="/assets/images/girl.jpg" alt="" />
-              <div class="testimony-bio">
-                <h5>Maria Sura</h5>
-                <p>Swiss</p>
+            <div class="heading">
+              <img src="/assets/images/girl2.jpg" alt="" />
+              <div class="bio">
+                <h5 class="name">Maria Sura</h5>
+                <p class="address">Swiss</p>
               </div>
             </div>
-
-            <p class="testimony-desc">
-              Pantainya sangat indah dengan pasir putihnya dan fasilitas yang
-              lengkap juga sangat membantu kami dalam berlibur di pantai ini
+            <p class="desc">
+              <q
+                >Pantainya sangat indah pasirnya putih dan fasilitas yang
+                lengkap juga sangat membantu kami dalam berlibur di pantai
+                ini</q
+              >
             </p>
           </div>
           <div class="card">
-            <div class="testimony-heading">
+            <div class="heading">
               <img src="/assets/images/man.jpg" alt="" />
-              <div class="testimony-bio">
-                <h5>Rio Prawira</h5>
-                <p>Jakarta, Indonesia</p>
+              <div class="bio">
+                <h5 class="name">Rio Prawira</h5>
+                <p class="address">Jakarta, Indonesia</p>
               </div>
             </div>
-            <p class="testimony-desc">
-              Pulau kecil yang sangat indah disamping pulau Madura, menyimpan
-              keindahan yang sangat memanjakan mata. Dapat dijadikan tujuan
-              liburan yang sangat menarik
+            <p class="desc">
+              <q
+                >Pulau kecil yang sangat indah disamping pulau Madura, menyimpan
+                keindahan yang sangat memanjakan mata. Dapat dijadikan tujuan
+                liburan yang sangat menarik
+              </q>
             </p>
           </div>
           <div class="card">
-            <div class="testimony-heading">
+            <div class="heading">
               <img src="/assets/images/girl.jpg" alt="" />
-              <div class="testimony-bio">
-                <h5>Rina Sutisna</h5>
-                <p>Bekasi, Indonesia</p>
+              <div class="bio">
+                <h5 class="name">Rina Sutisna</h5>
+                <p class="address">Bekasi, Indonesia</p>
               </div>
             </div>
-            <p class="testimony-desc">
-              Pantainya sangat bersih dan penduduk yang ramah membuat liburan di
-              Pulau ini sangat nyaman
+            <p class="desc">
+              <q
+                >Pantainya sangat bersih dan penduduk yang ramah membuat liburan
+                di Pulau ini sangat nyaman dan menyenangkan
+              </q>
             </p>
           </div>
         </div>
-      </section>
+      </article>
 
-      <section id="section-alamat">
+      <article id="section-alamat">
         <h2 class="alamat-title">Peta Alamat Pantai Sembilan</h2>
         <iframe
           class="alamat-content"
@@ -154,7 +174,7 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-      </section>
+      </article>
 
       <article id="section-developer">
         <h2>Biodata Developer</h2>
@@ -162,24 +182,25 @@
           <div class="card">
             <img src="/assets/images/developer.jpg" alt="" />
             <div class="bio">
-              <h5>Mohammad Hidayatullah</h5>
+              <h5 class="name">Mohammad Hidayatullah</h5>
+              <p class="address">Pamekasan, Indonesia</p>
               <p>Mahasiswa Teknik Informatika di Politeknik Negeri Jember</p>
-              <p>Pamekasan, Indonesia</p>
-              <p>
-                <a href="https://www.instagram.com/hxdayxx/">
+              <ul>
+                <li href="https://www.instagram.com/hxdayxx/">
                   <i class="fab fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.facebook.com/rio.prawira">
+                </li>
+                <li href="https://www.linkedin.com/in/mohammad-hidayatullah">
                   <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.twitter.com/rio_prawira">
+                </li>
+                <li href="https://github.com/MohammadHidayatullah">
                   <i class="fab fa-github"></i>
-                </a>
-              </p>
+                </li>
+              </ul>
             </div>
           </div>
         </aside>
       </article>
+
       <button class="btn btn-go-to-top" id="btn-to-top" onclick="goToTop()">
         <i class="fa fa-arrow-up"></i>
       </button>
@@ -189,6 +210,7 @@
       <p>&copy; Copyright Mohammad Hidayatollah 2022</p>
     </footer>
 
+    <!-- import script javascript eksternal -->
     <script src="/assets/javascript/javascript.js"></script>
   </body>
 </html>
